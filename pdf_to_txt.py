@@ -2,7 +2,7 @@ import PyPDF2
 import os
 import sys
 
-def pdf_translator(pdf_file):
+def pdf_reader(pdf_file):
 
 
     pdf_file_obj = open(pdf_file, 'rb')
@@ -17,4 +17,4 @@ def pdf_translator(pdf_file):
     print("Contains ", tot_pages, " pages")
     print(text)
 
-pdf_translator(sys.argv[1])
+pdf_reader(sys.argv[1])
